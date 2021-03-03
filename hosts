@@ -1,0 +1,9 @@
+[ibmi]
+ibmi_node1 ansible_host=10.150.31.109
+ibmi_node1 ansible_host=10.150.110.246
+
+[ibmi:vars]
+ansible_ssh_user=QSECOFR
+ansible_ssh_pass=passw0rd
+ansible_python_interpreter="/QOpensys/pkgs/bin/python3"
+
