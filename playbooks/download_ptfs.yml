@@ -1,0 +1,13 @@
+- name: IBM i download a list of individual PTFs
+  hosts: all
+
+  vars:
+    to_be_downloaded_list:
+      - {'ptf_id':'SI73543'}
+      - {'ptf_id':'SI73430'}
+    download_server: 'downloadserver'
+
+  tasks:
+    - name: Include download_individual_ptfs role to download a list of individual ptfs
+      include_role:
+        name: download_individual_ptfs
